@@ -21,7 +21,7 @@ class VideoGameListController: UIViewController, UITableViewDataSource, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    let videoGames = ["World of Warcraft", "Star Wars: The Old Republic"]
+    let videoGames = ["World of Warcraft", "Star Wars: The Old Republic", "Guild Wars 2", "Hearthsone", "Final Fantasy VII", "Sim City 4", "StarCraft", "Tie Fighter", "The Legend of Zelda", "PunchOut!"]
     let videoGameTableIdentifier = "VideoGameTableIdentifier"
     
     //This function must be inplemented in every table.
