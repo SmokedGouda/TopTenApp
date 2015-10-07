@@ -4,11 +4,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="upheavtt.ttf">
+            <string>UpheavalTT-BRK-</string>
+            <string>UpheavalTT-BRK-</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Top Ten Master Button Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Top Ten Master Button Scene" id="BYZ-38-t0r" customClass="ViewController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Top Ten Master Button Scene" modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,16 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-QE-d6E">
-                                <rect key="frame" x="252" y="169" width="97" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <state key="normal" title="Movies">
-                                    <color key="titleColor" red="0.736143732879316" green="0.7430688403753456" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x6d-dz-45X" kind="presentation" id="b59-Wm-LU6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRz-Ql-xEn">
                                 <rect key="frame" x="257" y="276" width="86" height="47"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
@@ -38,8 +34,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjB-m3-NAH">
-                                <rect key="frame" x="210" y="383" width="180" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <rect key="frame" x="204" y="387" width="192" height="39"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="30"/>
                                 <state key="normal" title="Video Games">
                                     <color key="titleColor" red="0.55210104110000002" green="1" blue="0.54843745320000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -57,6 +53,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-QE-d6E">
+                                <rect key="frame" x="252" y="169" width="97" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Movies">
+                                    <color key="titleColor" red="0.736143732879316" green="0.7430688403753456" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x6d-dz-45X" kind="presentation" id="b59-Wm-LU6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -74,8 +80,8 @@
                             <constraint firstItem="BjB-m3-NAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1P-8Y-pgN"/>
                             <constraint firstItem="CRz-Ql-xEn" firstAttribute="top" secondItem="QaK-QE-d6E" secondAttribute="bottom" constant="60" id="e2f-TJ-PaY"/>
                             <constraint firstItem="BjB-m3-NAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNy-UB-iNA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BjB-m3-NAH" secondAttribute="bottom" constant="170" id="jbm-zM-u4F"/>
-                            <constraint firstItem="BjB-m3-NAH" firstAttribute="top" secondItem="CRz-Ql-xEn" secondAttribute="bottom" constant="60" id="oIW-O7-ant"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BjB-m3-NAH" secondAttribute="bottom" constant="174" id="jbm-zM-u4F"/>
+                            <constraint firstItem="BjB-m3-NAH" firstAttribute="top" secondItem="CRz-Ql-xEn" secondAttribute="bottom" constant="64" id="oIW-O7-ant"/>
                             <constraint firstItem="zta-xO-wEO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="r8K-P4-ZcN"/>
                             <constraint firstItem="zta-xO-wEO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uGH-8L-wWv"/>
                             <constraint firstItem="zta-xO-wEO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="ugQ-fr-nVt"/>
@@ -106,7 +112,7 @@
         <!--Movie List Scene-->
         <scene sceneID="RAX-by-80r">
             <objects>
-                <viewController title="Movie List Scene" id="x6d-dz-45X" customClass="MovieViewController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Movie List Scene" modalTransitionStyle="flipHorizontal" id="x6d-dz-45X" customClass="MovieViewController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9SN-6X-0o8"/>
                         <viewControllerLayoutGuide type="bottom" id="CcZ-rk-4BT"/>
@@ -163,7 +169,7 @@
         <!--Songs List Scene-->
         <scene sceneID="eii-ef-LrL">
             <objects>
-                <viewController title="Songs List Scene" id="D9d-H9-Ffn" customClass="SongListController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Songs List Scene" modalTransitionStyle="flipHorizontal" id="D9d-H9-Ffn" customClass="SongListController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZL-52-1dw"/>
                         <viewControllerLayoutGuide type="bottom" id="RPd-ld-rAQ"/>
@@ -217,7 +223,7 @@
         <!--Video Games List Scene-->
         <scene sceneID="oVo-cE-1FN">
             <objects>
-                <viewController title="Video Games List Scene" id="Rge-DH-JVk" customClass="VideoGameListController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Video Games List Scene" modalTransitionStyle="flipHorizontal" id="Rge-DH-JVk" customClass="VideoGameListController" customModule="TopTenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H00-5Q-yrg"/>
                         <viewControllerLayoutGuide type="bottom" id="7Sa-Oo-hja"/>
@@ -239,7 +245,8 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8m-qM-ruL">
-                                <rect key="frame" x="231" y="562" width="139" height="30"/>
+                                <rect key="frame" x="195" y="562" width="212" height="30"/>
+                                <fontDescription key="fontDescription" name="UpheavalTT-BRK-" family="Upheaval TT (BRK)" pointSize="20"/>
                                 <state key="normal" title="Return to Main Page">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -250,7 +257,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.55210104114754188" green="1" blue="0.5484374531979388" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="c8m-qM-ruL" firstAttribute="centerX" secondItem="2Pw-yd-rng" secondAttribute="centerX" id="11R-DD-seu"/>
+                            <constraint firstItem="c8m-qM-ruL" firstAttribute="centerX" secondItem="2Pw-yd-rng" secondAttribute="centerX" constant="1" id="11R-DD-seu"/>
                             <constraint firstAttribute="trailing" secondItem="jrF-dC-WfT" secondAttribute="trailing" id="6ux-hI-qHZ"/>
                             <constraint firstItem="jrF-dC-WfT" firstAttribute="top" secondItem="H00-5Q-yrg" secondAttribute="bottom" constant="8" id="dcd-Up-0tS"/>
                             <constraint firstItem="7Sa-Oo-hja" firstAttribute="top" secondItem="c8m-qM-ruL" secondAttribute="bottom" constant="8" id="fcI-b9-z79"/>
